@@ -1,0 +1,19 @@
+{
+"events": [{
+    "year": "2020",
+    "id": 1,
+    "event-category": "pandemic",
+    "event": "covid"
+},
+{
+    "year": "2020",
+    "id": 2,
+    "event-category": "environmental",
+    "event": "west coast wildires"
+},
+{
+    "year": "2021",
+    "id": 3,
+    "event-category": "sports",
+    "event": "summer olympics"
+}]}
