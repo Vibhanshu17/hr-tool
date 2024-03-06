@@ -5,21 +5,19 @@ class MessageParser {
 
     parse(message){
         console.log(message);
-        const lowercase = message.toLowerCase();
+        message = message.toLowerCase();
 
         // this.actionProvider.reply(message);
-
-        if(lowercase.includes("hello")){
+        if(message.includes("hello")){
             this.actionProvider.greet();
         }
         else if(message.includes("introduce")){
             this.actionProvider.introduce();
         }
         else{
-            this.actionProvider.dont_answer();
+            this.actionProvider.qna(message)
+            // this.actionProvider.dont_answer();
         }
-
-
     }
 }
 
