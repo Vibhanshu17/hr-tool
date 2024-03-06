@@ -1,111 +1,72 @@
+"use client";
+// import { ParsedUrlQuery } from "querystring";
+// import { ParsedUrlQuery } from "node:querystring";
 import React, { useEffect } from "react";
+
 import Card from "../../components/Card";
-
-interface Profile {
-  url: string; // profile id
-  name: string;
-  img: string; // can scrap?
-  about: string; // headline
-  job_role: string; // industry?
-  email: string; // not-required
-}
-
-const data: Profile[] = [
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/John_Morgan.png",
-    name: "John Morgan",
-    job_role: "Software Engineer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Ellie_Anderson.png",
-    name: "Ellie Anderson",
-    job_role: "Front-end Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhansh-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Nia_Adebavo.png",
-    name: "Nia Adebavo",
-    job_role: "Full Stack Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/John_Morgan.png",
-    name: "My Name",
-    job_role: "Software Engineer",
-    about:
-      "I'm a programmer, looking to work in a fast-paced team akshgo pawehgso wajkshadg \
-      owahse ldgowua ieksjbgdvowu asgdbjvqwn peg;ouvdbqw ne;sodg ub vqwnesdp goubv j i w q kenosdgui vhwbq k \
-      egsdovuqwibhek gdsvoqvuwibheg skdv;owuqirhsbg ",
-  },
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Ellie_Anderson.png",
-    name: "My Name",
-    job_role: "Front-end Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhansh-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Nia_Adebavo.png",
-    name: "My Name",
-    job_role: "Full Stack Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/John_Morgan.png",
-    name: "My Name",
-    job_role: "Software Engineer",
-    about:
-      "I'm a programmer, looking to work in a fast-paced team akshgo pawehgso wajkshadg \
-    owahse ldgowua ieksjbgdvowu asgdbjvqwn peg;ouvdbqw ne;sodg ub vqwnesdp goubv j i w q kenosdgui vhwbq k \
-    egsdovuqwibhek gdsvoqvuwibheg skdv;owuqirhsbg ",
-  },
-  {
-    url: "www.linkedin.com/in/vibhanshu-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Ellie_Anderson.png",
-    name: "My Name",
-    job_role: "Front-end Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-  {
-    url: "www.linkedin.com/in/vibhansh-gupta",
-    email: "mail@gmail.com",
-    img: "./images/Nia_Adebavo.png",
-    name: "My Name",
-    job_role: "Full Stack Developer",
-    about: "I'm a programmer, looking to work in a fast-paced team",
-  },
-];
+import Navbar from "@/components/Navbar";
+// import { useLocation } from "react-router-dom";
+// import { useRouter } from "next/router";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function LinkedInProfile() {
+  // const { state } = useLocation();
+  // const router = useRouter();
+  const searchParams = useSearchParams();
+  const in_data = JSON.parse(searchParams.get("search"));
+  // console.log("in_data[0]: " + in_data[0]);
+
   return (
     <>
-      <div className="flex justify-center relative p-1">
-        <div className="grid auto-cols-fr md:grid-col-3 auto-rows-fr grid-cols-3 gap-4">
-          <Card profile={data[0]} />
-          <Card profile={data[1]} />
-          <Card profile={data[2]} />
+      <Navbar />
+      <div className="grid grid-cols-8 relative">
+        <div className="flex justify-center align-middle relative p-1 col-start-2 col-span-6">
+          <div className="grid auto-cols-fr md:grid-col-3 auto-rows-fr grid-cols-3 gap-0">
+            <Card profile={in_data[0]} />
+            <Card profile={in_data[1]} />
+            <Card profile={in_data[2]} />
+            <Card profile={in_data[3]} />
+            <Card profile={in_data[4]} />
+            <Card profile={in_data[5]} />
+            <Card profile={in_data[6]} />
+            <Card profile={in_data[7]} />
+            <Card profile={in_data[8]} />
+            {/* <Card
+              profile={in_data && in_data.length > 0 ? in_data[0] : data[0]}
+            />
+            <Card
+              profile={in_data && in_data.length > 1 ? in_data[1] : data[1]}
+            />
+            <Card
+              profile={in_data && in_data.length > 2 ? in_data[1] : data[2]}
+            />
+            <Card
+              profile={in_data && in_data.length > 3 ? in_data[1] : data[3]}
+            />
+            <Card
+              profile={in_data && in_data.length > 4 ? in_data[1] : data[4]}
+            />
+            <Card
+              profile={in_data && in_data.length > 5 ? in_data[1] : data[5]}
+            />
+            <Card
+              profile={in_data && in_data.length > 6 ? in_data[1] : data[6]}
+            />
+            <Card
+              profile={in_data && in_data.length > 7 ? in_data[1] : data[7]}
+            />
+            <Card
+              profile={in_data && in_data.length > 8 ? in_data[1] : data[8]}
+            /> */}
+
+            {/* <Card profile={data[2]} />
           <Card profile={data[3]} />
           <Card profile={data[4]} />
           <Card profile={data[5]} />
           <Card profile={data[6]} />
           <Card profile={data[7]} />
-          <Card profile={data[8]} />
-          {/* <div className="rounded bg-slate-100 p-3">This has some content.</div>
+          <Card profile={data[8]} /> */}
+            {/* <div className="rounded bg-slate-100 p-3">This has some content.</div>
           <div className="rounded bg-slate-100 p-3">
             This has more content so that its significantly larger than the
             other items. Yet all items, even the one in the new line will grow
@@ -115,9 +76,10 @@ export default function LinkedInProfile() {
           <div className="rounded bg-slate-100 p-3">
             First item in new line.
           </div> */}
-          {/* {data.map((d) => (
+            {/* {data.map((d) => (
             <Card profile={d} />
           ))} */}
+          </div>
         </div>
       </div>
     </>

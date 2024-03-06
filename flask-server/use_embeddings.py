@@ -32,11 +32,14 @@ query = "imaginary characters from outer space at war"
 print("\tQuery: " + query)
 
 # Find results
+query_embedding = generate_embedding_hf(query)
+print(len(query_embedding))
+
 results = collection.aggregate([
     {"$vectorSearch": {
-        "queryVector": generate_embedding_hf(query),
+        "queryVector": query_embedding,
         "path": "plot_embedding_hf",
-        "numCandidates": 50,
+        "numCandidates": 20,
         "limit": 4,
         "index": "PlotSemanticSearch",
     }}

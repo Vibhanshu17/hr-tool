@@ -1,7 +1,7 @@
 .window {
     text-align: center;
     background-color: #282c34;
-    min-height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,4 +13,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
+  }
+
+  .react-chatbot-kit-chat-container {
+    background-color: aliceblue;
   }

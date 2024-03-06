@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100  bg-slate-300 rounded-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -30,7 +30,9 @@ const Navbar = () => {
               <a href="/homepage">Homepage</a>
             </li>
             <li>
-              <a href="/linkedin-profile">LinkedIn Profiles</a>
+              <a href="/linkedin-profile" className="btn-disabled">
+                LinkedIn Profiles
+              </a>
             </li>
             <li>
               <a>About</a>
@@ -39,7 +41,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-3xl">AI Crafters</a>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">

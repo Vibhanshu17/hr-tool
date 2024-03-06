@@ -1,0 +1,35 @@
+.details {
+    font-size: 14px;
+    font-weight: 100;
+    font-family: "Franklin Gothic Medium", 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+
+.summary {
+    font-size: 19px;
+    /* color: # */
+    line-height: 1.4;
+    font-weight: bold;
+    color: #0756AF;    
+    font-family: "Franklin Gothic Medium", 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+
+.flexbox {
+    text-align: left;
+    font-family: "SC Sans", "Arial", Arial, Helvetica, sans-serif;
+}
+
+.tags {
+    float: left;
+    justify-content: flex-start;
+}
+
+.MuiChip-root {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.action-buttons {
+    float: right;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
