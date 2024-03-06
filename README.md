@@ -11,4 +11,4 @@ My submission for `SCB Innovation Hackathon` (28th Feb - 8th March, 2024)
 This is a NextJS application. It also has a simple Flask backend with a few endpoints to run python code. 
 
 ### Front End:
-Essentially TailwindCSS with MUI accordian component
+It's essentially Tailwind CSS with one MUI accordion component
