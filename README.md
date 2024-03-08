@@ -21,5 +21,5 @@ It's essentially Tailwind CSS with one MUI accordion component
 
 ## Team:
 **Vibhanshu Gupta** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; **Anshul Agrawal**\
-Development Engineer &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Development Engineer\
-IT-Projects CCIB TB Trade &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; IT-Projects FCIO Finance
+Development Engineer &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; Development Engineer\
+IT-Projects CCIB TB Trade &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; IT-Projects FCIO Finance
