@@ -20,6 +20,6 @@ This is a NextJS application. It also has a simple Flask backend with a few endp
 It's essentially Tailwind CSS with one MUI accordion component
 
 ## Team:
-**Vibhanshu Gupta** \t \t \t \t \t \t \t \t \t \t \t **Anshul Agrawal**\
-Development Engineer \t \t \t \t \t \t \t \t \t \t \t Development Engineer\
-IT-Projects CCIB TB Trade \t \t \t \t \t \t \t \t \t \t \t IT-Projects FCIO Finance
+**Vibhanshu Gupta** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; **Anshul Agrawal**\
+Development Engineer &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Development Engineer\
+IT-Projects CCIB TB Trade &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; IT-Projects FCIO Finance
