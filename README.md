@@ -1,6 +1,7 @@
 # AI Crafter - Profile Selection Tool
-My submission for `SCB Innovation Hackathon` (28th Feb - 8th March, 2024)
-Problem Statement: Develop an innovative solution that integrates with popular professional networking platforms such as LinkedIn, job portals like naukri and Indeed, to automate the candidate screening process for a given job role and location. The solution should analyze candidate profiles, extract relevant information, and assign a comprehensive score to each candidate based on their qualifications, experience, and skills.
+My submission for `SCB Innovation Hackathon` (28th Feb - 8th March, 2024) 
+
+**Problem Statement:** Develop an innovative solution that integrates with popular professional networking platforms such as LinkedIn, job portals like naukri and Indeed, to automate the candidate screening process for a given job role and location. The solution should analyze candidate profiles, extract relevant information, and assign a comprehensive score to each candidate based on their qualifications, experience, and skills.
 
 **_Features_**
 > * Scrape LinkedIn for profiles based on keywords
